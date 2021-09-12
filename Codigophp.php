@@ -3,22 +3,22 @@
 session_start();
 
 $_SESSION['color'] = "red";
-$_SESSION['name'] = "John";
+$_SESSION['name'] = "Infraestructura Ef";
 ?>
 <html>
 <head>
-<title>Pagina en PHP </title>
+<title>Pagina para Falabella en Php </title>
 </head>
 <body>
 <?php
-echo "!hola humano";
+echo "!hola compradores";
 ?>
 <script language="php">
 echo "Hola colombia !";
 </script>
 <br>
 <?php
-echo "yo quiero al php" 
+echo "Necesito productos" 
 ?>
 <br>
 <?php
@@ -32,7 +32,7 @@ echo "<strong>con strong se hace un texto en negrilla</strong>";
 ?>
 <br>
 <?php
-echo "<p> Hola mundo </p>";
+echo "<p> Hola Falabella </p>";
 // esto es un comentario de una sola linea
 echo "<p> estoy aprendiendo PHP </p>"; 
 echo "<p> Este es mi primer programa :D</p>"; 
@@ -42,10 +42,10 @@ abarca varias lineas*/
 <br>
 <?php
 // esto es para hacer variables
-$name ='John';
+$name ='Infraestructura Ef';
 $age ='24';
 echo $name;
-//Muestra john
+//Muestra Infraestructura Ef
 ?>
 <br>
 <?php
@@ -158,51 +158,51 @@ echo $x;
 <br>
 <?php
 //EJEMPLO DE UNA LISTA SIN MATRIZ
-$nombre1 = "David"; 
-$nombre2 = "Amy"; 
+$nombre1 = "Frankin Guerrero"; 
+$nombre2 = "Esteban Muñoz"; 
 $nombre3 = "Juan";
 ?>
 <?php
 //Matriz numerica
 
-$nombre = array ("David", "Amy", "John");
+$nombre = array ("Frankin Guerrero", "Esteban Muñoz", "Infraestructura Ef");
 ?>
 <?php
 //Indice manualmente
-$nombres [0] = "David";
-$nombres [1] = "Amy";
+$nombres [0] = "Frankin Guerrero";
+$nombres [1] = "Esteban Muñoz";
 $nombres [2] = "Juan";
 echo $nombres [1]; //Produce "amy"
 ?>
 <br>
 <?php
 // matrices numericas
-$myArray[0]="John";
+$myArray[0]="Infraestructura Ef";
 $myArray[1]="<strong>PHP</strong>";
 $myArray[2]=21;
 echo "$myArray[0] tiene  $myArray[2] años y conoce
 $myArray[1]";
-//Muestra que John tiene 21 años y conoce php
+//Muestra que Infraestructura Ef tiene 21 años y conoce php
 ?>
 <br>
 <?php
-$people = array("David"=>"27", "Amy"=>"21", "John"=>"42");
+$people = array("Frankin Guerrero"=>"27", "Esteban Muñoz"=>"21", "Infraestructura Ef"=>"42");
 // or
-$people['David'] = "27";
-$people['Amy'] = "21";
-$people['John'] = "42";
-$people= array("David"=>"27","Amy"=>"21","John"=>"42");
-echo $people['Amy'];//Muestra 21
+$people['Frankin Guerrero'] = "27";
+$people['Esteban Muñoz'] = "21";
+$people['Infraestructura Ef'] = "42";
+$people= array("Frankin Guerrero"=>"27","Esteban Muñoz"=>"21","Infraestructura Ef"=>"42");
+echo $people['Esteban Muñoz'];//Muestra 21
 ?>
 <br>
 <?php
 //Matriz multidimensional
 $people = array(
-    'online'=>array('David', 'Amy'),
-    'offline'=>array('John', 'Rob', 'Jack'),
+    'online'=>array('Frankin Guerrero', 'Esteban Muñoz'),
+    'offline'=>array('Infraestructura Ef', 'Rob', 'Jack'),
     'away'=>array('Arthur', 'Daniel')
  );
-echo $people['online'][0]; //Muestra David
+echo $people['online'][0]; //Muestra Frankin Guerrero
 echo $people['away'][1]; // Muestra Daniel
 ?>
 <br>
@@ -303,13 +303,13 @@ foreach (matriz como $ clave => $ valor) {
    código a ejecutar;
 }*/
 //EJEMPLO DEL BUCLE FOREACH
-$names = array("John","David","Amy");
+$names = array("Infraestructura Ef","Frankin Guerrero","Esteban Muñoz");
 foreach ($names as $name){
     echo $name.'<br/>';
 }
 //Jon
-//David
-//Amy
+//Frankin Guerrero
+//Esteban Muñoz
 ?>
 <br>
 <?php
@@ -472,10 +472,8 @@ echo $_SERVER['SCRIPT_NAME'];
 /*
 echo $_SERVER['HTTP_HOST'];
 //Outputs "localhost"
-
 $host = $_SERVER['HTTP_HOST'];
 $image_path = $host.'/images/';
-
 require 'config.php';
 echo '<img src="'.$image_path.'header.png" />';
 */
@@ -498,7 +496,7 @@ echo '<img src="'.$image_path.'header.png" />';
 ?>
 <?php
 echo "Your name is " . $_SESSION['name'];
-// Outputs "Your name is John"
+// Outputs "Your name is Infraestructura Ef"
 ?>
 <?php
 //Crear una cookie
@@ -506,28 +504,28 @@ echo "Your name is " . $_SESSION['name'];
 //EJEMPLO
 ?>
 <?php
-$value = "John";
+$value = "Infraestructura Ef";
 setcookie("user", $value, time() + (86400 * 30), '/'); 
 
 if(isset($_COOKIE['user'])) {
   echo "Value is: ". $_COOKIE['user'];
 }
-//Outputs "Value is: John"
+//Outputs "Value is: Infraestructura Ef"
 ?>
 <br>
 <?php
 $myfile = fopen("names.txt", "w");
 
-$txt = "John\n";
+$txt = "Infraestructura Ef\n";
 fwrite($myfile, $txt);
-$txt = "David\n";
+$txt = "Frankin Guerrero\n";
 fwrite($myfile, $txt);
 
 fclose($myfile);
 
 /* File contains:
-John
-David
+Infraestructura Ef
+Frankin Guerrero
 */
 //Agregar un archivo
 $myFile = "test.txt";
@@ -586,7 +584,6 @@ class Dog{
 }
 $d1 =new Dog();
 $d2->display();//4
-
 $d2 = new Dog();
 $d2->legs = 2;
 $d2->display();//2*/
@@ -618,7 +615,6 @@ $d->hi();
 interface AnimalInterface{
   public function makeSound();
 }
-
 class Dog implements AnimalInterface {
   public function makeSound(){
     echo "woof <br/>";
